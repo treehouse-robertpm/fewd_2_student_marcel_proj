@@ -1,0 +1,396 @@
+/*
+BASE STYLE*/
+*{
+box-sizing: border-box;
+}
+
+a{
+text-decoration: none;
+color: #FFF8DC;
+}
+
+li{
+list-style-type: none;
+}
+
+hr{
+width: 100%;
+border-radius: 50%;
+}
+
+body{
+background-image: url(../images/studentImage.jpg);
+background-repeat: repeat-y;
+background-color: black;
+background-size: 100% auto;
+}
+
+
+/*
+HEADER STYLE*/
+
+.header{
+width: 100%
+}
+
+.hcontainer{
+/*position: fixed;*/
+top: 0;
+width: 100%;
+box-shadow: 1px 2px 4px rgba(10, 10, 10, .5);
+overflow: auto;
+margin: 0 auto;
+background-image: radial-gradient(circle at top right,#FFF8DC 0%, #F0E68C 55%, #8B4513 100%);
+opacity: 0.9;
+/*z-index: 1000;*/
+/*margin-bottom: 100px;*/
+}
+
+.main-nav li{
+margin-top: 10px;
+font-size: 1.5em;
+}
+
+.name, .main-nav li{
+width: 100%;
+text-align: center;
+display: inline-block;
+}
+
+.name a,.main-nav a{
+text-align: center;
+padding-right: 20px;
+display: block;
+color: rgba(0,0,0,0.6);
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+     0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.name{
+margin-top: 0;
+color: rgba(0,0,0,0.6);
+text-shadow: 5px 8px 6px rgba(0,0,0,0.3),
+     10px -10px 35px rgba(255,255,255,0.3);
+}
+
+
+/*BODY STYLE*/
+.bcontainer p{
+width: 100%;
+float: left;
+text-align: left;
+padding-top: 60px;
+padding-left: 20px;
+font-weight: bold;
+opacity: 0.8;
+font-family: 'Lucida Sans';
+}
+
+.bcontainer{
+width: 100%;
+display: block;
+padding-top: 0px;
+}
+
+.profile{
+width: 100%;
+border-radius: 60% 0%;
+height: 200px;
+}
+
+.container{
+width: 90%;
+margin: auto;
+max-width: 960px;
+text-align: left;
+background: #FFF8DC; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(top,rgba(235, 243, 144, 0),rgba(235, 243, 144,1)); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,rgba(235, 243, 144, 0),rgba(235, 243, 144,1)); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,rgba(235, 243, 144, 0),rgba(235, 243, 144,1)); /*Fx 3.6-15*/
+background: linear-gradient(to top, rgba(235, 243, 144, 0),rgba(235, 243, 144,1)); /*Standard*/
+opacity: 0.92;
+}
+
+.wrapper p{
+max-width: 400px;
+width: 70%;
+text-align: center;
+margin-left: 15%;
+font-family: sans-serif;
+font-weight: bolder;
+opacity: 0.9;
+}
+
+.portfolio{
+padding-top: 20px;
+font-size: 2.5em;
+text-align: center;
+margin-bottom: 50px;
+clear: both;
+}
+
+.img{
+width: 70%;
+height: 150px;
+transition:all .5s;
+opacity: 1;
+border-radius: 30px 0px 0px 30px;
+}
+
+.img:hover{
+transform: scale(1.2);
+}
+
+.col{
+float: left;
+/*padding-right: 0.5em;
+padding-left: 0.5em;*/
+text-align: center;
+}
+
+
+/*FOOTER STYLE*/
+
+.fcontainer{
+padding-top: 0px;
+}
+
+.footer ul{
+width: 100%;
+}
+
+.footer strong{
+color:black;
+font-weight: bolder;
+font-size: 15px;
+}
+
+.goup{
+color: #FFF8DC;
+font-weight: bold;
+display: inline;
+float: right;
+margin: 20px 20px 0px 0px;
+}
+
+.goup p{
+margin-left: 100%;
+}
+
+.footer{
+width: 50%;
+clear: both;
+text-align: center;
+margin-left: 25%;
+font-size: 15px;
+font-weight: normal;
+padding-top: 0px;
+color: #FFF8DC;
+}
+
+.footer strong{
+color: white;
+}
+
+.footername{
+width: 50%;
+color: #FFF8DC;
+padding-left: 20px;
+}
+
+.footernav{
+float: right;
+padding-top: 18px;
+display: none;
+}
+
+.footernav li{
+font-weight: bolder;
+}
+
+.footernav li a:hover{
+color: black;
+}
+
+.footername a:hover{
+color: black;
+}
+
+.footername, .footernav li{
+display: inline-block;
+color: #FFF8DC;
+}
+
+.footername a, .footernav li a{
+color: #FFF8DC;
+}
+
+
+/*CLEARFIX*/
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+/*  WEBFONTS*/
+
+@font-face{
+font-family:'Abolition Regular';
+src: url('../fonts/abolition-regular-webfont.eot');
+src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/abolition-regular-webfont.woff') format('woff'),
+url('../fonts/abolition-regular-webfont.ttf') format('truetype'); 
+}
+
+
+/*MEDIA-QUERIES*/
+
+@media(min-width: 768px){
+	
+	body{
+padding-top: 72px;
+background-image: url(../images/studentImageLg.jpg) ;
+}
+	
+.bcontainer{
+/*padding-top: 73px;*/
+}
+
+.bcontainer p{
+width: 50%;
+padding-top: 50px;
+}
+
+.hcontainer{
+position: fixed;
+z-index: 1000;
+}
+
+.main-nav{
+width: 50%;
+float: right;
+/*margin-right: 20px;*/
+}
+
+.name,
+.col{
+float: left;
+}
+
+.name a{
+padding-right: 0px;
+}
+
+.main-nav {
+/*width: 50%;*/
+margin-top: 10px;
+padding-left: 10%;
+/*float: left;
+*/}
+
+.main-nav li{
+width: 30%;
+float: left;
+}
+
+.name{
+width: 40%;
+margin-left: 0px;
+margin-top: 15px;
+}
+
+.profile{
+width: 50%;
+float: right;
+}
+
+.first,
+.second,
+.third {
+width: 50%;
+}
+
+.footer{
+width: 50%;
+margin-left: 25%; 
+}
+
+.wrapper p{
+max-width: 300px;
+width: 100%;
+text-align: center;
+margin-left:10%;
+}
+
+.img{
+width: 100%;
+padding-right: 0px;
+}
+
+.name, .main-nav li{
+text-align: center;
+display: inline-block;
+}
+
+.footernav{
+display: initial;
+}
+
+.footernav li{
+padding-right: 20px;
+}
+
+.goup{
+display: none;
+}
+}
+
+@media(min-width: 1024px){
+
+.first, .second, .third{
+width: 33.3%;
+text-align: left;
+}
+
+.name {
+width: 30%;
+}
+
+.main-nav a{
+padding-right: 20px;
+}
+
+.main-nav{
+width: 40%;
+/*padding-left: 180px;*/
+text-align: right;
+}
+
+.wrapper p{
+width: 100%;
+text-align: center;
+padding-right: 15%;
+}
+
+h3{
+width: 100%;
+text-align: center;
+}
+
+body{
+padding-top: 72px;
+
+}
+
+.footer{
+font-weight: bold;
+color:#FFF8DC;
+}
+
+.footer strong{
+color: white;
+}
+}
